@@ -141,12 +141,27 @@ article {
     all: unset;
 }
 
+.btn--next,
+.btn--prev {
+    padding: 1.4rem 3.2rem;
+    color: $white-cl;
+    cursor: pointer;
+}
+
 .btn--rounded {
     border-radius: 5px;
+}
+
+svg {
+    fill: #fff
 }
 
 .product__caption {
     @include text(1.2rem, arial, 4rem, $black-cl, uppercase);
     font-weight: bolder;
     margin-bottom: 1.5rem;
+}
+
+.--hide {
+    overflow: hidden;
 }
