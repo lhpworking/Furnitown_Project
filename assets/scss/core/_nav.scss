@@ -262,5 +262,11 @@
 
     .menu__mobile {
         display: block;
+
+        &>ul {
+
+            padding-right: calc(var(--gap)/2);
+            padding-left: calc(var(--gap)/2);
+        }
     }
 }

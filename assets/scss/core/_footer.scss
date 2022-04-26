@@ -1,8 +1,7 @@
 /* footer */
 .footer {
     background-color: $primary-cl;
-    height: 94.5rem;
-    margin-top: -20%;
+    height: 50rem;
 
     .container {
         position: relative;
@@ -10,9 +9,25 @@
         height: 100%;
     }
 
+    &.home {
+        height: 95rem;
+        margin-top: -20%;
+
+        .footer {
+            &__contact {
+                position: relative;
+                top: 70%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+            }
+
+        }
+    }
+
     &__contact {
-        position: absolute;
-        top: 70%;
+        position: relative;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 100%;
@@ -52,13 +67,15 @@
     &__back-top {
         position: absolute;
         transform: rotate(90deg);
-        right: -2rem;
+        right: -3rem;
 
         a {
             @include text(1rem, arial, 2.6rem, $backTop-cl, uppercase);
             letter-spacing: 0.02rem;
             display: flex;
+            flex-direction: row;
             align-items: center;
+            position: relative;
 
             &:before {
                 content: "";
@@ -66,6 +83,7 @@
                 width: 13rem;
                 height: .1rem;
                 background-color: $furnitown-cl;
+                right: 100%;
                 margin-right: 1rem;
             }
         }
@@ -77,12 +95,17 @@
 // max 1200
 @include md {
     .footer {
-        margin-top: -25%;
-        height: 84.5rem;
+        &.home {
+            height: 85rem;
+            margin-top: -25%;
 
-        &__contact {
-            top: 60%;
+            .footer {
+                &__contact {
+                    top: 60%;
 
+                }
+
+            }
         }
 
         &__back-top {
@@ -98,12 +121,12 @@
 // max 768
 @include sm {
     .footer {
-        margin-top: -30%;
-        height: 74.5rem;
-
         &__contact {
-            top: 60%;
+            top: 30%;
+        }
 
+        &.home {
+            margin-top: -30%;
         }
 
         &__back-top {
@@ -119,18 +142,21 @@
 // max 576
 @include xs {
     .footer {
-        margin-top: -50%;
-        height: 94.5rem;
+        &.home {
+            margin-top: -50%;
 
-        &__contact {
-            top: 60%;
+            &__contact {
+                top: 60%;
 
+            }
         }
+
+
 
         &__back-top {
             position: absolute;
-            right: -8rem;
-            bottom: -15rem;
+            right: -6rem;
+            bottom: -10rem;
 
         }
 
@@ -152,11 +178,10 @@
 // max 428
 @media screen and (max-width: 428px) {
     .footer {
-        margin-top: -60%;
+        height: 60rem;
 
-        &__contact {
-            top: 50%;
-
+        &.home {
+            margin-top: -60%;
         }
     }
 }
@@ -164,7 +189,9 @@
 // max 360
 @media screen and (max-width: 360px) {
     .footer {
-        margin-top: -70%;
+        &.home {
+            margin-top: -70%;
+        }
     }
 }
 

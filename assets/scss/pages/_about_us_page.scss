@@ -1,0 +1,301 @@
+.about-us {
+    .container-fluid {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+
+    .menu__aside {
+        &-block {
+            top: 15%;
+            transform: translateY(-20%);
+        }
+    }
+
+    .figure-img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .share {
+
+        &__logo,
+        &__text {
+            color: $black-cl;
+        }
+
+        svg {
+            fill: $black-cl;
+        }
+    }
+
+    .banner {
+        .container {
+            position: relative;
+
+        }
+
+
+        &__top {
+            position: relative;
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: var(--gap);
+
+            &-header {
+                position: relative;
+                grid-column: 2/12;
+                grid-row: 1/2;
+                margin-top: 17rem;
+
+                &>h2 {
+                    @include text(4.4rem, EB, 5rem, $header-about-us-cl, uppercase);
+                    letter-spacing: 0.44rem;
+                    margin-bottom: 2rem
+                }
+
+                &>p {
+                    @include text(1.4rem, arial, 2rem, $black-cl, uppercase);
+                    letter-spacing: 0.14rem;
+                }
+            }
+
+            &-figure {
+                grid-column: 2/12;
+                grid-row: 2/3;
+                position: relative;
+                padding-top: 50%;
+            }
+
+            &>p {
+                @include text(1.4rem, arial, 4.6rem, $black-cl, null);
+                letter-spacing: 0.14rem;
+                grid-column: 3/11;
+                text-align: center;
+            }
+
+            &::after {
+                content: "";
+                display: block;
+                width: 100%;
+                max-width: 23rem;
+                height: .1rem;
+                position: absolute;
+                background-color: $black-cl;
+                bottom: -12rem;
+                left: 50%;
+                transform: translateX(-50%) rotate(90deg);
+            }
+
+        }
+
+        &__mid {
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: var(--gap);
+            margin-top: 20rem;
+            margin-bottom: 12rem;
+
+            p {
+                grid-column: 2/6;
+                grid-row: 1/2;
+                @include text(1.4rem, arial, 4.6rem, $black-cl, null);
+                text-align: left;
+            }
+
+            &-figure {
+                grid-column: 7/12;
+                grid-row: 2/3;
+                position: relative;
+                padding-top: 100%;
+                margin-top: -15rem;
+            }
+
+        }
+
+        &__bot {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: var(--gap);
+            text-align: center;
+            margin-bottom: 14rem;
+
+            &-author {
+                grid-column: 3/11;
+                grid-row: 1/2;
+
+                &--name,
+                &--pos,
+                &--text {
+                    @include text(1.4rem, arial, 2.6rem, $black-cl, null);
+                    letter-spacing: 0.14rem;
+                }
+
+                &--name {
+                    margin-top: 3rem;
+                    text-transform: uppercase;
+                }
+            }
+
+            &-img {
+                position: relative;
+                padding-top: 50%;
+                grid-column: 4/10;
+
+                &::after {
+                    content: "nguyen!";
+                    color: red;
+                    position: absolute;
+                    bottom: -4rem;
+                    right: -2rem;
+                    @include text(3rem, HP, 7.3rem, #6b4e24, capitalize);
+                    letter-spacing: -0.075rem;
+
+                }
+            }
+
+            &>p {
+                grid-column: 4/10;
+                margin-top: 3rem;
+                @include text(1.4rem, arial, 2.6rem, $black-cl, null);
+            }
+
+            &-btn {
+                grid-column: 4/10;
+                margin-top: 3rem;
+                height: 3.6rem;
+            }
+        }
+    }
+}
+
+// .footer {
+//     height: 50rem;
+//     margin-top: 0;
+
+
+//     &__contact {
+//         top: 50%;
+//     }
+// }
+
+@include md {
+    .about-us {
+        .container-fluid {
+            .menu__aside {
+                &-block {
+                    display: none;
+                }
+            }
+
+            .banner {
+                .container {
+                    position: relative;
+
+                }
+
+                &__mid {
+
+                    margin-top: 24rem;
+                    margin-bottom: 10rem;
+
+                    p {
+                        grid-column: 2/12;
+                        text-align: center;
+                    }
+
+                    &-figure {
+                        grid-column: 1/13;
+                        margin-top: 0;
+                        padding-top: 50%;
+                    }
+
+                }
+
+                &__bot {
+
+                    &-btn {
+                        .btn-contact {
+                            margin-right: 0;
+                            margin-bottom: 2.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include sm {
+    .about-us {
+        .container-fluid {
+            .menu__aside {
+                &-block {
+                    display: none;
+                }
+            }
+
+            .banner {
+                .container {
+                    position: relative;
+
+                }
+
+                &__top {
+                    &-figure {
+                        grid-column: 1/13;
+                        grid-row: 2/3;
+                    }
+
+                    &>p {
+                        grid-column: 2/12;
+                    }
+                }
+
+                &__mid {
+                    margin-bottom: 6rem;
+
+                    &__figure {
+                        grid-column: 1/13;
+                    }
+
+                    &>p {
+                        grid-column: 2/12;
+                    }
+                }
+
+                &__bot {
+                    &-author {
+                        grid-column: 2/12;
+                    }
+
+                    &-btn {
+                        grid-column: 4/10;
+
+                        .btn-contact {
+                            margin-right: 0;
+                            margin-bottom: 2.5rem;
+                        }
+                    }
+
+                    &>p {
+                        grid-column: 2/12;
+                    }
+
+                    &-img {
+                        grid-column: 2/12;
+                    }
+                }
+            }
+        }
+    }
+}

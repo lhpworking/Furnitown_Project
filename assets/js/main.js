@@ -1,4 +1,4 @@
-$('.main-carousel').flickity({
+$('.carousel__wrap').flickity({
     // options
     cellAlign: 'left',
     contain: true,
@@ -13,6 +13,38 @@ $('.btn--prev').on('click', function () {
 });
 $('.btn--next').on('click', function () {
     $('.main-carousel').flickity('next');
+});
+
+$('.product__wrap').flickity({
+    // options
+    cellAlign: 'center',
+    contain: true,
+    pageDots: false,
+    prevNextButtons: false,
+    groupCells: true
+});
+$('.product__carousel-wrap').flickity({
+    // options
+    cellAlign: 'left',
+    contain: true,
+    pageDots: false,
+    draggable: true,
+    prevNextButtons: false,
+    wrapAround: true
+});
+// fancy app 
+Fancybox.bind("[data-fancybox='products']", {
+    // Your options go here
+    infinite: false,
+    Escape: "close",
+    Delete: "close",
+    Backspace: "close",
+    PageUp: "next",
+    PageDown: "prev",
+    ArrowUp: "next",
+    ArrowDown: "prev",
+    ArrowRight: "next",
+    ArrowLeft: "prev",
 });
 
 // click open aside menu 
@@ -54,10 +86,9 @@ let scrollTop = () => {
     window.scrollTo({
         top: 0,
         behavior: 'smooth'
-
     })
 }
-$(".footer__back-top").click(scrollTop);
+$(".footer__back-top a").click(scrollTop);
 
 // open menu mobile
 

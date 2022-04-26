@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta tag -->
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <title>Furnitown</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- link css -->
+    <link rel="stylesheet" href="./dest/style.min.css">
+    <link rel="stylesheet" href="./dest/fonts.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <nav class="menu__scroll">
+            <ul class="menu">
+                <li class="menu__item"><a href="./about-us.html">furnitown</a></li>
+                <li class="menu__item"><a href="./product.html">sản phẩm</a></li>
+                <li class="menu__item"><a href="./dich-vu.html">dịch vụ</a></li>
+                <li class="menu__item">
+                    <a href="./index.html" class="menu__logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="55px" height="42px" viewBox="0 0 198.42 154.63">
+                            <g id="Layer_2" data-name="Layer 2">
+                                <g id="Isolation_Mode" data-name="Isolation Mode">
+                                    <polygon
+                                        points="3.69 113.87 3.69 120.23 13.63 120.23 13.63 123.54 3.69 123.54 3.69 132.58 0 132.58 0 110.53 14.7 110.53 14.67 113.87 3.69 113.87" />
+                                    <path
+                                        d="M37.48,123.36c0,5.72-3.61,9.22-9.54,9.22s-9.57-3.5-9.57-9.22V110.53h3.71v12.83c0,3.68,2.29,5.91,5.89,5.91s5.81-2.19,5.81-5.91V110.53h3.7Z" />
+                                    <path
+                                        d="M52.67,125.9c-.32,0-.67,0-1,0H46.38v6.65H42.62V110.53h9c5.69,0,9,2.74,9,7.53,0,3.53-1.66,6-4.61,7.15l5,7.37H56.74Zm-1-3.3c3.44,0,5.41-1.45,5.41-4.44s-2-4.29-5.41-4.29H46.38v8.73Z" />
+                                    <polygon
+                                        points="81.6 132.58 69.86 116.77 69.86 132.58 66.14 132.58 66.14 110.53 69.79 110.53 81.6 126.38 81.6 110.53 85.25 110.53 85.25 132.58 81.6 132.58" />
+                                    <rect x="91.86" y="110.53" width="3.67" height="22.05" />
+                                    <polygon
+                                        points="110.61 113.87 110.61 132.58 106.89 132.58 106.89 113.87 99.95 113.87 99.95 110.53 117.58 110.53 117.58 113.87 110.61 113.87" />
+                                    <path
+                                        d="M141.84,121.53a11.4,11.4,0,0,1-22.79,0c0-6.26,5-11,11.4-11a11,11,0,0,1,11.39,11m-19.1,0a7.76,7.76,0,0,0,7.74,7.75,7.73,7.73,0,1,0-7.74-7.75" />
+                                    <polygon
+                                        points="164.64 132.58 159.49 115.39 154.28 132.58 150.5 132.58 143.31 110.53 147.24 110.53 152.51 128.45 157.75 110.56 161.35 110.53 166.62 128.45 171.86 110.53 175.64 110.53 168.39 132.58 164.64 132.58" />
+                                    <polygon
+                                        points="194.77 132.58 183.03 116.77 183.03 132.58 179.32 132.58 179.32 110.53 182.97 110.53 194.77 126.38 194.77 110.53 198.43 110.53 198.43 132.58 194.77 132.58" />
+                                    <polygon
+                                        points="52.94 154.59 52.94 151.38 48.59 151.38 48.59 154.59 47.77 154.59 47.77 147.31 48.59 147.31 48.59 150.59 52.94 150.59 52.94 147.31 53.76 147.31 53.76 154.59 52.94 154.59" />
+                                    <path
+                                        d="M63.06,151a3.77,3.77,0,1,1-3.76-3.66A3.7,3.7,0,0,1,63.06,151m-6.71,0a2.94,2.94,0,1,0,2.95-2.87A2.92,2.92,0,0,0,56.35,151" />
+                                    <polygon
+                                        points="71.35 154.59 71.34 148.59 68.71 153.82 68.22 153.82 65.6 148.59 65.6 154.59 64.82 154.59 64.82 147.31 65.84 147.31 68.48 152.55 71.1 147.31 72.11 147.31 72.11 154.59 71.35 154.59" />
+                                    <polygon
+                                        points="75.38 148.11 75.38 150.5 79.02 150.5 79.02 151.3 75.38 151.3 75.38 153.8 79.58 153.8 79.58 154.59 74.56 154.59 74.56 147.31 79.45 147.31 79.45 148.11 75.38 148.11" />
+                                    <polygon
+                                        points="85.42 148.11 85.42 150.67 88.78 150.67 88.78 151.47 85.42 151.47 85.42 154.59 84.59 154.59 84.59 147.31 89.17 147.31 89.17 148.11 85.42 148.11" />
+                                    <path
+                                        d="M96.53,151.59a3,3,0,1,1-6,0v-4.28h.82v4.28a2.21,2.21,0,1,0,4.41,0v-4.28h.82Z" />
+                                    <path
+                                        d="M102,152.27l-.49,0H99.63v2.3h-.82v-7.28h2.73c1.8,0,2.84.89,2.84,2.44a2.27,2.27,0,0,1-1.61,2.36l1.69,2.48h-.94Zm-.49-.78c1.31,0,2-.58,2-1.72s-.74-1.66-2-1.66H99.63v3.38Z" />
+                                    <polygon
+                                        points="111.65 154.59 107.33 148.74 107.33 154.59 106.5 154.59 106.5 147.31 107.36 147.31 111.68 153.16 111.68 147.31 112.49 147.31 112.49 154.59 111.65 154.59" />
+                                    <rect x="114.94" y="147.31" width="0.82" height="7.28" />
+                                    <path
+                                        d="M122.63,148l-.35.78a3.75,3.75,0,0,0-2-.61c-.92,0-1.53.35-1.53,1,0,1.87,4.06.89,4,3.53,0,1.22-1.06,2-2.61,2a4.07,4.07,0,0,1-2.75-1.11l.36-.75a3.6,3.6,0,0,0,2.4,1c1,0,1.69-.43,1.69-1.13,0-1.91-4-.89-4-3.5,0-1.14,1-1.88,2.49-1.88a4.28,4.28,0,0,1,2.28.67" />
+                                    <polygon
+                                        points="129.92 154.59 129.92 151.38 125.57 151.38 125.57 154.59 124.75 154.59 124.75 147.31 125.57 147.31 125.57 150.59 129.92 150.59 129.92 147.31 130.74 147.31 130.74 154.59 129.92 154.59" />
+                                    <rect x="133.18" y="147.31" width="0.82" height="7.28" />
+                                    <polygon
+                                        points="141.59 154.59 137.27 148.74 137.27 154.59 136.44 154.59 136.44 147.31 137.3 147.31 141.62 153.16 141.62 147.31 142.43 147.31 142.43 154.59 141.59 154.59" />
+                                    <path
+                                        d="M150.63,151v2.64a4.39,4.39,0,0,1-2.67,1,3.67,3.67,0,1,1,0-7.34,4,4,0,0,1,2.66,1l-.48.62a3.28,3.28,0,0,0-2.18-.84,2.89,2.89,0,1,0,0,5.77,3.36,3.36,0,0,0,1.89-.62V151Z" />
+                                    <path
+                                        d="M142.28,28.71l-1.91-1.27-36.3-24.2L99.66.3,99.21,0l-.44.3L94.36,3.24l-36.3,24.2-1.92,1.27-1,.69V88.49h2.94V60.07H69.33V88.49h2.94V60.07H83.53V88.49h2.94V57.13H72.27V45.86h53.89V57.13H112V88.49h2.94V60.07h11.27V88.49h2.94V60.07h11.27V88.49h2.94V29.4ZM129.1,57.13V42.92H69.33V57.13H58.06V31l3.38-2.26L99.21,3.53,137,28.71,140.37,31V57.13Z" />
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+                <li class="menu__item"><a href="./du-an.html">dự án</a></li>
+                <li class="menu__item"><a href="./news.html">tin tức</a></li>
+                <li class="menu__item"><a href="./contact.html">liên hệ</a></li>
+            </ul>
+        </nav>
+        <nav class="menu__mobile">
+            <ul>
+                <li class="menu__mobile-item "><span></span></li>
+                <li class="menu__mobile-item"><svg xmlns="http://www.w3.org/2000/svg" width="80px" height="50px"
+                        viewBox="0 0 198.42 154.63">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: #cb8f2b;
+                                }
+                            </style>
+                        </defs>
+                        <g id="Layer_2" data-name="Layer 2">
+                            <g id="Isolation_Mode" data-name="Isolation Mode">
+                                <polygon class="cls-1"
+                                    points="3.69 113.87 3.69 120.23 13.63 120.23 13.63 123.54 3.69 123.54 3.69 132.58 0 132.58 0 110.53 14.7 110.53 14.67 113.87 3.69 113.87" />
+                                <path class="cls-1"
+                                    d="M37.48,123.36c0,5.72-3.61,9.22-9.54,9.22s-9.57-3.5-9.57-9.22V110.53h3.71v12.83c0,3.68,2.29,5.91,5.89,5.91s5.81-2.19,5.81-5.91V110.53h3.7Z" />
+                                <path class="cls-1"
+                                    d="M52.67,125.9c-.32,0-.67,0-1,0H46.38v6.65H42.62V110.53h9c5.69,0,9,2.74,9,7.53,0,3.53-1.66,6-4.61,7.15l5,7.37H56.74Zm-1-3.3c3.44,0,5.41-1.45,5.41-4.44s-2-4.29-5.41-4.29H46.38v8.73Z" />
+                                <polygon class="cls-1"
+                                    points="81.6 132.58 69.86 116.77 69.86 132.58 66.14 132.58 66.14 110.53 69.79 110.53 81.6 126.38 81.6 110.53 85.25 110.53 85.25 132.58 81.6 132.58" />
+                                <rect class="cls-1" x="91.86" y="110.53" width="3.67" height="22.05" />
+                                <polygon class="cls-1"
+                                    points="110.61 113.87 110.61 132.58 106.89 132.58 106.89 113.87 99.95 113.87 99.95 110.53 117.58 110.53 117.58 113.87 110.61 113.87" />
+                                <path class="cls-1"
+                                    d="M141.84,121.53a11.4,11.4,0,0,1-22.79,0c0-6.26,5-11,11.4-11a11,11,0,0,1,11.39,11m-19.1,0a7.76,7.76,0,0,0,7.74,7.75,7.73,7.73,0,1,0-7.74-7.75" />
+                                <polygon class="cls-1"
+                                    points="164.64 132.58 159.49 115.39 154.28 132.58 150.5 132.58 143.31 110.53 147.24 110.53 152.51 128.45 157.75 110.56 161.35 110.53 166.62 128.45 171.86 110.53 175.64 110.53 168.39 132.58 164.64 132.58" />
+                                <polygon class="cls-1"
+                                    points="194.77 132.58 183.03 116.77 183.03 132.58 179.32 132.58 179.32 110.53 182.97 110.53 194.77 126.38 194.77 110.53 198.43 110.53 198.43 132.58 194.77 132.58" />
+                                <polygon class="cls-1"
+                                    points="52.94 154.59 52.94 151.38 48.59 151.38 48.59 154.59 47.77 154.59 47.77 147.31 48.59 147.31 48.59 150.59 52.94 150.59 52.94 147.31 53.76 147.31 53.76 154.59 52.94 154.59" />
+                                <path class="cls-1"
+                                    d="M63.06,151a3.77,3.77,0,1,1-3.76-3.66A3.7,3.7,0,0,1,63.06,151m-6.71,0a2.94,2.94,0,1,0,2.95-2.87A2.92,2.92,0,0,0,56.35,151" />
+                                <polygon class="cls-1"
+                                    points="71.35 154.59 71.34 148.59 68.71 153.82 68.22 153.82 65.6 148.59 65.6 154.59 64.82 154.59 64.82 147.31 65.84 147.31 68.48 152.55 71.1 147.31 72.11 147.31 72.11 154.59 71.35 154.59" />
+                                <polygon class="cls-1"
+                                    points="75.38 148.11 75.38 150.5 79.02 150.5 79.02 151.3 75.38 151.3 75.38 153.8 79.58 153.8 79.58 154.59 74.56 154.59 74.56 147.31 79.45 147.31 79.45 148.11 75.38 148.11" />
+                                <polygon class="cls-1"
+                                    points="85.42 148.11 85.42 150.67 88.78 150.67 88.78 151.47 85.42 151.47 85.42 154.59 84.59 154.59 84.59 147.31 89.17 147.31 89.17 148.11 85.42 148.11" />
+                                <path class="cls-1"
+                                    d="M96.53,151.59a3,3,0,1,1-6,0v-4.28h.82v4.28a2.21,2.21,0,1,0,4.41,0v-4.28h.82Z" />
+                                <path class="cls-1"
+                                    d="M102,152.27l-.49,0H99.63v2.3h-.82v-7.28h2.73c1.8,0,2.84.89,2.84,2.44a2.27,2.27,0,0,1-1.61,2.36l1.69,2.48h-.94Zm-.49-.78c1.31,0,2-.58,2-1.72s-.74-1.66-2-1.66H99.63v3.38Z" />
+                                <polygon class="cls-1"
+                                    points="111.65 154.59 107.33 148.74 107.33 154.59 106.5 154.59 106.5 147.31 107.36 147.31 111.68 153.16 111.68 147.31 112.49 147.31 112.49 154.59 111.65 154.59" />
+                                <rect class="cls-1" x="114.94" y="147.31" width="0.82" height="7.28" />
+                                <path class="cls-1"
+                                    d="M122.63,148l-.35.78a3.75,3.75,0,0,0-2-.61c-.92,0-1.53.35-1.53,1,0,1.87,4.06.89,4,3.53,0,1.22-1.06,2-2.61,2a4.07,4.07,0,0,1-2.75-1.11l.36-.75a3.6,3.6,0,0,0,2.4,1c1,0,1.69-.43,1.69-1.13,0-1.91-4-.89-4-3.5,0-1.14,1-1.88,2.49-1.88a4.28,4.28,0,0,1,2.28.67" />
+                                <polygon class="cls-1"
+                                    points="129.92 154.59 129.92 151.38 125.57 151.38 125.57 154.59 124.75 154.59 124.75 147.31 125.57 147.31 125.57 150.59 129.92 150.59 129.92 147.31 130.74 147.31 130.74 154.59 129.92 154.59" />
+                                <rect class="cls-1" x="133.18" y="147.31" width="0.82" height="7.28" />
+                                <polygon class="cls-1"
+                                    points="141.59 154.59 137.27 148.74 137.27 154.59 136.44 154.59 136.44 147.31 137.3 147.31 141.62 153.16 141.62 147.31 142.43 147.31 142.43 154.59 141.59 154.59" />
+                                <path class="cls-1"
+                                    d="M150.63,151v2.64a4.39,4.39,0,0,1-2.67,1,3.67,3.67,0,1,1,0-7.34,4,4,0,0,1,2.66,1l-.48.62a3.28,3.28,0,0,0-2.18-.84,2.89,2.89,0,1,0,0,5.77,3.36,3.36,0,0,0,1.89-.62V151Z" />
+                                <path class="cls-1"
+                                    d="M142.28,28.71l-1.91-1.27-36.3-24.2L99.66.3,99.21,0l-.44.3L94.36,3.24l-36.3,24.2-1.92,1.27-1,.69V88.49h2.94V60.07H69.33V88.49h2.94V60.07H83.53V88.49h2.94V57.13H72.27V45.86h53.89V57.13H112V88.49h2.94V60.07h11.27V88.49h2.94V60.07h11.27V88.49h2.94V29.4ZM129.1,57.13V42.92H69.33V57.13H58.06V31l3.38-2.26L99.21,3.53,137,28.71,140.37,31V57.13Z" />
+                            </g>
+                        </g>
+                    </svg></li>
+            </ul>
+            <div class="menu__mobile-content">
+                <div class="menu__mobile-content--top">
+                    <ul>
+                        <li>follow us</li>
+                        <li><img src="./assets/img/furnitown_home/email@2x.png" alt="email icon"
+                                srcset="./assets/img/furnitown_home/email@2x.png 2x"></li>
+                        <li><img src="./assets/img/furnitown_home/facebook@2x.png" alt="facebook icon"
+                                srcset="./assets/img/furnitown_home/facebook@2x.png 2x">
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu__mobile-content--body">
+                    <ul>
+                        <li><a href="./about-us.html">furnitown</a></li>
+                        <li><a href="./product.html">Sản phẩm</a></li>
+                        <li><a href="./dich-vu.html">Dịch vụ</a></li>
+                        <li><a href="./du-an.html">Dự án</a></li>
+                        <li><a href="./contact.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- main -->
+    <main class="du-an mainwrapper">
+        <div class="container-fluid">
+            <div class="share">
+                <a href="./about-us.html" class="share__logo">FurniTown</a>
+                <a href="./contact.html" class="share__text">share</a>
+                <span class="share__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" with="22px" height="8px" viewBox="0 0 37.21 14.49">
+                        <g id="Layer_2" data-name="Layer 2">
+                            <g id="Layer_3" data-name="Layer 3">
+                                <polygon
+                                    points="37.21 7.24 28.41 0 28.41 5.34 0 5.34 0 9.14 28.41 9.14 28.41 14.49 37.21 7.24" />
+                            </g>
+                        </g>
+                    </svg>
+                </span>
+            </div>
+            <nav class="menu__aside">
+                <div class="menu__aside-block">
+                    <div class="menu__aside-block--body">
+                        <span class="menu__aside-block--logo">
+                        </span>
+                        <div class="menu__aside-block--ham">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu__aside-content">
+                    <div class="menu__aside-inner">
+                        <div class="menu__aside-top">
+                            <a class="menu__logo-text">FurniTown</a>
+                            <ul class="menu__social">
+                                <li class="menu__social-item">follow us</li>
+                                <li class="menu__social-item"><img src="./assets/img/furnitown_home/email@2x.png"
+                                        alt="email icon" srcset="./assets/img/furnitown_home/email@2x.png 2x"></li>
+                                <li class="menu__social-item"><img src="./assets/img/furnitown_home/facebook@2x.png"
+                                        alt="facebook icon" srcset="./assets/img/furnitown_home/facebook@2x.png 2x">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu__aside-body">
+                            <div class="menu__aside-logo">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px"
+                                        viewBox="0 0 88.19 88.49">
+                                        <defs>
+                                            <style>
+                                                .cls-1 {
+                                                    fill: #cb8f2b;
+                                                }
+                                            </style>
+                                        </defs>
+                                        <g id="Layer_2" data-name="Layer 2">
+                                            <g id="Isolation_Mode" data-name="Isolation Mode">
+                                                <path class="cls-1"
+                                                    d="M87.16,28.71l-1.91-1.27L49,3.24,44.54.3,44.09,0l-.44.3L39.24,3.24,2.94,27.44,1,28.71,0,29.4V88.49H2.94V60.07H14.21V88.49h2.94V60.07H28.42V88.49h2.93V57.13H17.15V45.86H71V57.13H56.83V88.49h2.94V60.07H71V88.49H74V60.07H85.25V88.49h2.94V29.4ZM74,57.13V42.92H14.21V57.13H2.94V31l3.38-2.26L44.09,3.53,81.86,28.71,85.25,31V57.13Z" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                                <div class=" menu__aside-btn btn--close">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <ul class="menu__bar">
+                                <li class="menu__bar-item"><a href="./about-us.html">furnitown</a></li>
+                                <li class="menu__bar-item"><a href="./product.html">Sản phẩm</a></li>
+                                <li class="menu__bar-item"><a href="./dich-vu.html">Dịch vụ</a></li>
+                                <li class="menu__bar-item"><a href="./du-an.html">Dự án</a></li>
+                                <li class="menu__bar-item"><a href="./contact.html">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menu__aside-overlay"></div>
+
+                </div>
+            </nav>
+            <section class="project">
+                <div class="container">
+                    <div class="project__header">
+                        <h2 class="heading">các dự án</h2>
+                        <p>Aliquam blandit massa at pulvinar rhoncus. Duis ut mauris felis.
+                            Maecenas vitae gravida nibh. Integer euismod, ex vitae ornare varius, turpis erat interdum
+                            leo, et fringilla .</p>
+                        <div class="project__header-filter">
+                            <button class="btn">tất cả dự án <span><img width="10px" height="6px"
+                                        src="./assets/img/furnitown_du_an/Rectangle@2x.png" alt="triangle icon"
+                                        srcset="./assets/img/furnitown_du_an/Rectangle@2x.png 2x"></span></button>
+                            <ul class="project__header-filter--body">
+                                <li>
+                                    <a href="#!" class="project__header-filter--link">dự án nhà ở</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="project__header-filter--link">dự án văn phòng</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="project__header-filter--link">dự án chung cư</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <span class="project__header-line line"></span>
+                    </div>
+                    <div class="project__body">
+                        <div class="project__body-wrap">
+                            <div class="card">
+                                <figure class="card__figure">
+                                    <a href="./product.html">
+                                        <img src="./assets/img/furnitown_home/furnitown_product_5.jpg" alt="">
+                                    </a>
+                                </figure>
+                                <div class="card__body">
+                                    <div class="card__body-heading">
+                                        <a href="./product.html">Dự án căn hộ chung cư Vinhomes
+                                        </a>
+                                    </div>
+                                    <div class="card__body-desc">
+                                        <p>Praesent mollis tristique pellentesque. Praesent dapibus lectus neque, vel
+                                            convallis orci eleifend vel. Phasellus felis
+                                            lectus, eleifend eget quam eu</p>
+                                    </div>
+                                    <div class="card__body-view">
+                                        <a class="btn" href="./product.html"><svg width="22px" height="8px"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.21 14.49">
+
+                                                <g id="Layer_2" data-name="Layer 2">
+                                                    <g id="Layer_3" data-name="Layer 3">
+                                                        <polygon
+                                                            points="37.21 7.24 28.41 0 28.41 5.34 0 5.34 0 9.14 28.41 9.14 28.41 14.49 37.21 7.24" />
+                                                    </g>
+                                                </g>
+                                            </svg> xem thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <figure class="card__figure">
+                                    <a href="./product.html">
+                                        <img src="./assets/img/furnitown_home/furnitown_product_5.jpg" alt="">
+                                    </a>
+                                </figure>
+                                <div class="card__body">
+                                    <div class="card__body-heading">
+                                        <a href="./product.html">Dự án căn hộ chung cư Vinhomes
+                                        </a>
+                                    </div>
+                                    <div class="card__body-desc">
+                                        <p>Praesent mollis tristique pellentesque. Praesent dapibus lectus neque, vel
+                                            convallis orci eleifend vel. Phasellus felis
+                                            lectus, eleifend eget quam eu</p>
+                                    </div>
+                                    <div class="card__body-view">
+                                        <a class="btn" href="./product.html"><svg width="22px" height="8px"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.21 14.49">
+
+                                                <g id="Layer_2" data-name="Layer 2">
+                                                    <g id="Layer_3" data-name="Layer 3">
+                                                        <polygon
+                                                            points="37.21 7.24 28.41 0 28.41 5.34 0 5.34 0 9.14 28.41 9.14 28.41 14.49 37.21 7.24" />
+                                                    </g>
+                                                </g>
+                                            </svg> xem thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <figure class="card__figure">
+                                    <a href="./product.html">
+                                        <img src="./assets/img/furnitown_home/furnitown_product_5.jpg" alt="">
+                                    </a>
+                                </figure>
+                                <div class="card__body">
+                                    <div class="card__body-heading">
+                                        <a href="./product.html">Dự án căn hộ chung cư Vinhomes
+                                        </a>
+                                    </div>
+                                    <div class="card__body-desc">
+                                        <p>Praesent mollis tristique pellentesque. Praesent dapibus lectus neque, vel
+                                            convallis orci eleifend vel. Phasellus felis
+                                            lectus, eleifend eget quam eu</p>
+                                    </div>
+                                    <div class="card__body-view">
+                                        <a class="btn" href="./product.html"><svg width="22px" height="8px"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.21 14.49">
+
+                                                <g id="Layer_2" data-name="Layer 2">
+                                                    <g id="Layer_3" data-name="Layer 3">
+                                                        <polygon
+                                                            points="37.21 7.24 28.41 0 28.41 5.34 0 5.34 0 9.14 28.41 9.14 28.41 14.49 37.21 7.24" />
+                                                    </g>
+                                                </g>
+                                            </svg> xem thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <figure class="card__figure">
+                                    <a href="./product.html">
+                                        <img src="./assets/img/furnitown_home/furnitown_product_5.jpg" alt="">
+                                    </a>
+                                </figure>
+                                <div class="card__body">
+                                    <div class="card__body-heading">
+                                        <a href="./product.html">Dự án căn hộ chung cư Vinhomes
+                                        </a>
+                                    </div>
+                                    <div class="card__body-desc">
+                                        <p>Praesent mollis tristique pellentesque. Praesent dapibus lectus neque, vel
+                                            convallis orci eleifend vel. Phasellus felis
+                                            lectus, eleifend eget quam eu</p>
+                                    </div>
+                                    <div class="card__body-view">
+                                        <a class="btn" href="./product.html"><svg width="22px" height="8px"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.21 14.49">
+
+                                                <g id="Layer_2" data-name="Layer 2">
+                                                    <g id="Layer_3" data-name="Layer 3">
+                                                        <polygon
+                                                            points="37.21 7.24 28.41 0 28.41 5.34 0 5.34 0 9.14 28.41 9.14 28.41 14.49 37.21 7.24" />
+                                                    </g>
+                                                </g>
+                                            </svg> xem thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <figure class="card__figure">
+                                    <a href="./product.html">
+                                        <img src="./assets/img/furnitown_home/furnitown_product_5.jpg" alt="">
+                                    </a>
+                                </figure>
+                                <div class="card__body">
+                                    <div class="card__body-heading">
+                                        <a href="./product.html">Dự án căn hộ chung cư Vinhomes
+                                        </a>
+                                    </div>
+                                    <div class="card__body-desc">
+                                        <p>Praesent mollis tristique pellentesque. Praesent dapibus lectus neque, vel
+                                            convallis orci eleifend vel. Phasellus felis
+                                            lectus, eleifend eget quam eu</p>
+                                    </div>
+                                    <div class="card__body-view">
+                                        <a class="btn" href="./product.html"><svg width="22px" height="8px"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.21 14.49">
+
+                                                <g id="Layer_2" data-name="Layer 2">
+                                                    <g id="Layer_3" data-name="Layer 3">
+                                                        <polygon
+                                                            points="37.21 7.24 28.41 0 28.41 5.34 0 5.34 0 9.14 28.41 9.14 28.41 14.49 37.21 7.24" />
+                                                    </g>
+                                                </g>
+                                            </svg> xem thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <figure class="card__figure">
+                                    <a href="./product.html">
+                                        <img src="./assets/img/furnitown_home/furnitown_product_5.jpg" alt="">
+                                    </a>
+                                </figure>
+                                <div class="card__body">
+                                    <div class="card__body-heading">
+                                        <a href="./product.html">Dự án căn hộ chung cư Vinhomes
+                                        </a>
+                                    </div>
+                                    <div class="card__body-desc">
+                                        <p>Praesent mollis tristique pellentesque. Praesent dapibus lectus neque, vel
+                                            convallis orci eleifend vel. Phasellus felis
+                                            lectus, eleifend eget quam eu</p>
+                                    </div>
+                                    <div class="card__body-view">
+                                        <a class="btn" href="./product.html"><svg width="22px" height="8px"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.21 14.49">
+
+                                                <g id="Layer_2" data-name="Layer 2">
+                                                    <g id="Layer_3" data-name="Layer 3">
+                                                        <polygon
+                                                            points="37.21 7.24 28.41 0 28.41 5.34 0 5.34 0 9.14 28.41 9.14 28.41 14.49 37.21 7.24" />
+                                                    </g>
+                                                </g>
+                                            </svg> xem thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="project__pagination">
+                            <a href="#!" class="project__pagination-link active">1</a>
+                            <a href="#!" class="project__pagination-link">2</a>
+                            <a href="#!" class="project__pagination-link">3</a>
+                            <a href="#!" class="project__pagination-link">4</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__contact">
+                <div class="footer__logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="90px" height="69px" viewBox="0 0 198.42 154.63">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: #cb8f2b;
+                                }
+                            </style>
+                        </defs>
+                        <g id="Layer_2" data-name="Layer 2">
+                            <g id="Isolation_Mode" data-name="Isolation Mode">
+                                <polygon class="cls-1"
+                                    points="3.69 113.87 3.69 120.23 13.63 120.23 13.63 123.54 3.69 123.54 3.69 132.58 0 132.58 0 110.53 14.7 110.53 14.67 113.87 3.69 113.87" />
+                                <path class="cls-1"
+                                    d="M37.48,123.36c0,5.72-3.61,9.22-9.54,9.22s-9.57-3.5-9.57-9.22V110.53h3.71v12.83c0,3.68,2.29,5.91,5.89,5.91s5.81-2.19,5.81-5.91V110.53h3.7Z" />
+                                <path class="cls-1"
+                                    d="M52.67,125.9c-.32,0-.67,0-1,0H46.38v6.65H42.62V110.53h9c5.69,0,9,2.74,9,7.53,0,3.53-1.66,6-4.61,7.15l5,7.37H56.74Zm-1-3.3c3.44,0,5.41-1.45,5.41-4.44s-2-4.29-5.41-4.29H46.38v8.73Z" />
+                                <polygon class="cls-1"
+                                    points="81.6 132.58 69.86 116.77 69.86 132.58 66.14 132.58 66.14 110.53 69.79 110.53 81.6 126.38 81.6 110.53 85.25 110.53 85.25 132.58 81.6 132.58" />
+                                <rect class="cls-1" x="91.86" y="110.53" width="3.67" height="22.05" />
+                                <polygon class="cls-1"
+                                    points="110.61 113.87 110.61 132.58 106.89 132.58 106.89 113.87 99.95 113.87 99.95 110.53 117.58 110.53 117.58 113.87 110.61 113.87" />
+                                <path class="cls-1"
+                                    d="M141.84,121.53a11.4,11.4,0,0,1-22.79,0c0-6.26,5-11,11.4-11a11,11,0,0,1,11.39,11m-19.1,0a7.76,7.76,0,0,0,7.74,7.75,7.73,7.73,0,1,0-7.74-7.75" />
+                                <polygon class="cls-1"
+                                    points="164.64 132.58 159.49 115.39 154.28 132.58 150.5 132.58 143.31 110.53 147.24 110.53 152.51 128.45 157.75 110.56 161.35 110.53 166.62 128.45 171.86 110.53 175.64 110.53 168.39 132.58 164.64 132.58" />
+                                <polygon class="cls-1"
+                                    points="194.77 132.58 183.03 116.77 183.03 132.58 179.32 132.58 179.32 110.53 182.97 110.53 194.77 126.38 194.77 110.53 198.43 110.53 198.43 132.58 194.77 132.58" />
+                                <polygon class="cls-1"
+                                    points="52.94 154.59 52.94 151.38 48.59 151.38 48.59 154.59 47.77 154.59 47.77 147.31 48.59 147.31 48.59 150.59 52.94 150.59 52.94 147.31 53.76 147.31 53.76 154.59 52.94 154.59" />
+                                <path class="cls-1"
+                                    d="M63.06,151a3.77,3.77,0,1,1-3.76-3.66A3.7,3.7,0,0,1,63.06,151m-6.71,0a2.94,2.94,0,1,0,2.95-2.87A2.92,2.92,0,0,0,56.35,151" />
+                                <polygon class="cls-1"
+                                    points="71.35 154.59 71.34 148.59 68.71 153.82 68.22 153.82 65.6 148.59 65.6 154.59 64.82 154.59 64.82 147.31 65.84 147.31 68.48 152.55 71.1 147.31 72.11 147.31 72.11 154.59 71.35 154.59" />
+                                <polygon class="cls-1"
+                                    points="75.38 148.11 75.38 150.5 79.02 150.5 79.02 151.3 75.38 151.3 75.38 153.8 79.58 153.8 79.58 154.59 74.56 154.59 74.56 147.31 79.45 147.31 79.45 148.11 75.38 148.11" />
+                                <polygon class="cls-1"
+                                    points="85.42 148.11 85.42 150.67 88.78 150.67 88.78 151.47 85.42 151.47 85.42 154.59 84.59 154.59 84.59 147.31 89.17 147.31 89.17 148.11 85.42 148.11" />
+                                <path class="cls-1"
+                                    d="M96.53,151.59a3,3,0,1,1-6,0v-4.28h.82v4.28a2.21,2.21,0,1,0,4.41,0v-4.28h.82Z" />
+                                <path class="cls-1"
+                                    d="M102,152.27l-.49,0H99.63v2.3h-.82v-7.28h2.73c1.8,0,2.84.89,2.84,2.44a2.27,2.27,0,0,1-1.61,2.36l1.69,2.48h-.94Zm-.49-.78c1.31,0,2-.58,2-1.72s-.74-1.66-2-1.66H99.63v3.38Z" />
+                                <polygon class="cls-1"
+                                    points="111.65 154.59 107.33 148.74 107.33 154.59 106.5 154.59 106.5 147.31 107.36 147.31 111.68 153.16 111.68 147.31 112.49 147.31 112.49 154.59 111.65 154.59" />
+                                <rect class="cls-1" x="114.94" y="147.31" width="0.82" height="7.28" />
+                                <path class="cls-1"
+                                    d="M122.63,148l-.35.78a3.75,3.75,0,0,0-2-.61c-.92,0-1.53.35-1.53,1,0,1.87,4.06.89,4,3.53,0,1.22-1.06,2-2.61,2a4.07,4.07,0,0,1-2.75-1.11l.36-.75a3.6,3.6,0,0,0,2.4,1c1,0,1.69-.43,1.69-1.13,0-1.91-4-.89-4-3.5,0-1.14,1-1.88,2.49-1.88a4.28,4.28,0,0,1,2.28.67" />
+                                <polygon class="cls-1"
+                                    points="129.92 154.59 129.92 151.38 125.57 151.38 125.57 154.59 124.75 154.59 124.75 147.31 125.57 147.31 125.57 150.59 129.92 150.59 129.92 147.31 130.74 147.31 130.74 154.59 129.92 154.59" />
+                                <rect class="cls-1" x="133.18" y="147.31" width="0.82" height="7.28" />
+                                <polygon class="cls-1"
+                                    points="141.59 154.59 137.27 148.74 137.27 154.59 136.44 154.59 136.44 147.31 137.3 147.31 141.62 153.16 141.62 147.31 142.43 147.31 142.43 154.59 141.59 154.59" />
+                                <path class="cls-1"
+                                    d="M150.63,151v2.64a4.39,4.39,0,0,1-2.67,1,3.67,3.67,0,1,1,0-7.34,4,4,0,0,1,2.66,1l-.48.62a3.28,3.28,0,0,0-2.18-.84,2.89,2.89,0,1,0,0,5.77,3.36,3.36,0,0,0,1.89-.62V151Z" />
+                                <path class="cls-1"
+                                    d="M142.28,28.71l-1.91-1.27-36.3-24.2L99.66.3,99.21,0l-.44.3L94.36,3.24l-36.3,24.2-1.92,1.27-1,.69V88.49h2.94V60.07H69.33V88.49h2.94V60.07H83.53V88.49h2.94V57.13H72.27V45.86h53.89V57.13H112V88.49h2.94V60.07h11.27V88.49h2.94V60.07h11.27V88.49h2.94V29.4ZM129.1,57.13V42.92H69.33V57.13H58.06V31l3.38-2.26L99.21,3.53,137,28.71,140.37,31V57.13Z" />
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <div class="footer__info">
+                    <p>Thời gian mở cửa: 8h - 18h - Thứ 2 đến Chủ nhật</p>
+                    <p>Số 7/22A, Ấp 6, xã Đông Thạnh, huyện Hóc Môn, thành phố Hồ Chí Minh</p>
+                    <p>Hotline: 0937.168.938</p>
+                    <p>Email: noithatfunitown@gmail.com</p>
+                </div>
+                <div class="footer__back-top">
+                    <a href="#!">back to top</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- scripts -->
+    <script src="./dest/jsmain.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

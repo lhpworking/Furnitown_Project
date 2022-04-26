@@ -1,0 +1,143 @@
+.contacts {
+    position: relative;
+
+    .container-fluid {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+
+    .menu__aside {
+        &-block {
+            top: 30%;
+            transform: translateY(-30%);
+        }
+    }
+
+
+    .contact {
+        iframe {
+            position: relative;
+            z-index: 2;
+            margin-bottom: 10rem;
+        }
+
+        &__wrap {
+            max-width: 83rem;
+            margin: 0 auto;
+            padding-top: 16rem;
+            padding-bottom: 11.5rem;
+        }
+
+        &.bg-overlay {
+            &::after {
+                opacity: .8;
+                background-color: rgba($color: #000000, $alpha: 0.8);
+            }
+        }
+
+        &__info {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: var(--gap);
+
+            position: relative;
+            z-index: 2;
+            margin-bottom: 3rem;
+
+            &--us {
+                grid-column: 1/6;
+                grid-row: 1/3;
+            }
+
+            &--hotline {
+                grid-column: 7/9
+            }
+
+            &--email {
+                grid-column: 9/11;
+            }
+
+            &--address {
+                grid-column: 7/12;
+                grid-row: 2/3
+            }
+        }
+
+        &__advise {
+            position: relative;
+            z-index: 2;
+
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            column-gap: var(--gap);
+
+            &>p {
+                grid-column: 1/6;
+                @include text(1.2rem, arial, 2.2rem, $white-cl, null);
+                letter-spacing: 0.12rem;
+            }
+
+            &-block {
+                grid-column: 1/13;
+                grid-row: 2/3;
+
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: var(--gap);
+            }
+
+            &>.btn--send {
+                grid-row: 3/4;
+                grid-column: 12/12;
+                max-width: 2.2rem;
+                margin-top: 3rem;
+            }
+        }
+
+        &__input {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            &>label {
+                @include text(1.2rem, arial, 8.2rem, $white-cl, null);
+            }
+
+            &>input {
+                all: unset;
+                border-bottom: 1px solid $contact-heading-cl;
+                @include text(1.4rem, arial, 2.2rem, $white-cl, null);
+                color: $white-cl;
+                accent-color: $contact-heading-cl;
+                margin-top: -2rem;
+            }
+
+            &>textarea {
+                all: unset;
+                @include text(1.4rem, arial, 4.2rem, $white-cl, null);
+                background: linear-gradient(transparent, transparent 41px, $contact-heading-cl 41px);
+                background-size: 100% 42px;
+                position: absolute;
+                width: 100%;
+                bottom: -100%;
+                height: 126px
+            }
+
+        }
+
+        &__heading {
+            @include text(1.2rem, arial, 0.75rem, $contact-heading-cl, uppercase);
+            font-weight: bold;
+            margin-bottom: 2rem
+        }
+
+        &__desc {
+            @include text(1.2rem, arial, 2.2rem, $white-cl, null);
+            letter-spacing: 0.12rem;
+        }
+    }
+
+}
+
+@include xs {}

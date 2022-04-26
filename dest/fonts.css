@@ -51,3 +51,21 @@
     font-style: normal;
     font-display: fallback;
 }
+
+@font-face {
+    font-family: 'HP';
+    src: url('../assets/fonts/HijrnotesPERSONALUSEONLY.woff2') format('woff2'),
+        url('../assets/fonts/HijrnotesPERSONALUSEONLY.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'MP';
+    src: url('../assets/fonts/MyriadPro-Cond.woff2') format('woff2'),
+        url('../assets/fonts/MyriadPro-Cond.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
